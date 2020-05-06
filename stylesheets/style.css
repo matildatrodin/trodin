@@ -1,0 +1,126 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+#container {
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    height: 500px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 2vh;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 3px;
+} 
+
+.header-subcontainer {
+    margin: 20px;
+} 
+
+.header {
+    font-family: 'Caveat', cursive;
+    font-size: 60pt;
+    font-weight: 600;
+    margin: 0;
+}
+
+.header-2 {
+    font-size: 11pt;
+    font-weight: 200;
+    color: #FFC09F;
+}
+
+.matilda-img {
+    width: 300px
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    height: 100px;
+    background: rgb(255,192,159);
+    background: linear-gradient(198deg, rgba(255,192,159,1) 0%, rgba(255,196,253,1) 63%, rgba(121,173,220,1) 100%);
+    border-radius: 3px;
+}
+
+.gh-icon {
+    width: 100px;
+}
+
+.li-icon {
+    width: 120px;
+    color: white;
+}
+
+.soc-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+.soc-button:hover {
+    display: flex;
+    background-color: rgba(255,255,255,0.3);
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+.body-container {
+    display: flex;
+    background-color: #FFC4FD;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-3 {
+    font-family: 'Caveat', cursive;
+    font-size: 40pt;
+    font-weight: 600;
+    margin: 0;
+}
+
+.triangle-container {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+}
+
+.triangle-left{
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40vh solid #FFC4FD;
+    border-right: 100vw solid transparent;
+}
+
+.triangle-right{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40vh solid #FFC09F;
+    border-left: 50vw solid transparent;
+}
