@@ -4,9 +4,60 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 14pt;
+}
+
 #container {
     margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+.theme-button-container {
+    position: absolute;
+    right: 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.theme-button {
+    display: flex;
+    flex-direction: row;
+    opacity: 0.5;
+}
+
+.theme-button:hover {
+    opacity: 1;
+}
+
+.halfCirclePink{
+    height:40px;
+    width:20px;
+    border-radius: 90px 0 0 90px;
+    background:#FFC4FD;
+}
+
+.halfCircleOrange{
+    height:40px;
+    width:20px;
+    border-radius: 0 90px 90px 0;
+    background:#FFC09F;
+}
+
+.halfCircleBlue{
+    height:40px;
+    width:20px;
+    border-radius: 90px 0 0 90px;
+    background: #79ADDC;
+}
+
+.halfCircleGreen{
+    height:40px;
+    width:20px;
+    border-radius: 0 90px 90px 0;
+    background:#9AD5CA;
 }
 
 .header-container {
@@ -46,17 +97,35 @@ body {
     }
 }
 
-.header-2 {
-    font-size: 11pt;
+.header-2-pink {
+    font-size: 12pt;
     color: #FFC09F;
+}
+
+.header-2-blue {
+    font-size: 12pt;
+    color: #9AD5CA;
 }
 
 .header-3 {
     font-family: 'Caveat', cursive;
+    font-size: 32pt;
+    font-weight: 400;
+}
+
+.header-4 {
+    font-family: 'Caveat', cursive;
     font-size: 24pt;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 3vh;
     margin-top: 3vh;
+}
+
+.soc-button-text {
+    font-family: 'Caveat', cursive;
+    font-size: 32pt;
+    font-weight: 400;
+    margin: 0;
 }
 
 .matilda-img {
@@ -66,11 +135,9 @@ body {
 
 .divider {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100px;
-    background: rgb(255,192,159);
-    background: linear-gradient(198deg, rgba(255,192,159,1) 0%, rgba(255,196,253,1) 63%, rgba(121,173,220,1) 100%);
     border-radius: 3px;
 }
 
@@ -87,23 +154,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 120px;
-    padding: 8px;
-    border: 3px solid white;
-    border-radius: 3px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    margin: 1vw;
 }
 
 .soc-button:hover {
-    display: flex;
-    background-color: rgba(255,255,255,0.3);
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 120px;
-    padding: 8px;
-    border: 3px solid white;
-    border-radius: 3px;
+    opacity: 0.5;
 }
 
 .body-container {
@@ -132,14 +192,14 @@ body {
     }
 }
 
-#body-container-blue {
+.body-top-container-blue {
     background-color: #79ADDC;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#body-container-pink {
+.body-top-container-pink {
     background-color: #FFC4FD;
     display: flex;
     justify-content: center;
@@ -163,21 +223,40 @@ body {
     overflow: hidden;
 }
 
-.triangle-left{
+.triangle-left-pink{
     position: absolute;
     left: 0;
     border-bottom: 15vh solid #FFC09F;
     border-right: 60vw solid transparent;
 }
 
-.triangle-right{
+.triangle-right-pink{
     position: absolute;
     right: 0;
     border-bottom: 15vh solid #FFC4FD;
     border-left: 100vw solid transparent;
 }
 
-.triangle-top-left{
+.triangle-top-left-pink{
     border-top: 15vh solid #FFC4FD;
+    border-right: 100vw solid transparent;
+}
+
+.triangle-left-blue{
+    position: absolute;
+    left: 0;
+    border-bottom: 15vh solid #9AD5CA;
+    border-right: 60vw solid transparent;
+}
+
+.triangle-right-blue{
+    position: absolute;
+    right: 0;
+    border-bottom: 15vh solid #79ADDC;
+    border-left: 100vw solid transparent;
+}
+
+.triangle-top-left-blue{
+    border-top: 15vh solid #79ADDC;
     border-right: 100vw solid transparent;
 }

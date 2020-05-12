@@ -11,37 +11,47 @@
     </head>
     <body>
         <div id="container">
+            <div class="theme-button-container">
+                <div class="theme-button" onClick="themePicker('pink')">
+                    <div class="halfCirclePink"></div>
+                    <div class="halfCircleOrange"></div>
+                </div>
+                <div class="theme-button" onClick="themePicker('blue')">
+                    <div class="halfCircleBlue"></div>
+                    <div class="halfCircleGreen"></div>
+                </div>
+            </div>
             <div class="header-container">
                 <div class="header-subcontainer">
                     <p class="header">Hi, </p>
                     <p class="header">I'm Matilda</p>
-                    <p class="header-2">FRONTEND DEVELOPER & DESIGNER</p>
+                    <p id="header-2" class="header-2-pink">FRONTEND DEVELOPER & DESIGNER</p>
                 </div>
                 <div class="header-subcontainer">
                     <img class="matilda-img" src="images/matilda-svart.png" alt="Matilda">
                 </div>
             </div>
             <div class="triangle-container">
-                <div class="triangle-left"></div>
-                <div class="triangle-right"></div>
+                <div id="triangle-left" class="triangle-left-pink"></div>
+                <div id="triangle-right" class="triangle-right-pink"></div>
             </div>
-            <div id="body-container-pink">
+            <div id="body-top-container" class="body-top-container-pink">
                 <div class="subheader-text-box">
-                    <p class="header-3">
+                    <p class="header-4">
                         I’m a frontend developer currently based in Stockholm, Sweden. 
                     </p>
-                    <p class="header-3">
+                    <p class="header-4">
                         I started as a graphic designer in my early twenties and with my education 
                         I’ve combined my skills to become a diverse and skilled developer. 
                         I have a creative mind but my code is always clean, structured and elegant.
                     </p>
-                    <p class="header-3">
+                    <p class="header-4">
                         My skills range from design, to HTML, CSS, Javascript and React, all the way to Node, jQuery and MongoDB.
                     </p>
                 </div>
             </div>
             <div class="triangle-container">
-                <div class="triangle-top-left"></div>
+                <div id="triangle-top-left" class="triangle-top-left-pink"></div>
             </div>
             <div class="body-container">
                 <div class="text-box">
@@ -68,14 +78,12 @@
         </div>
         <div class="divider">
             <div class="soc-button">
-                <img class="gh-icon" src="images/GitHub_Logo_White.png" alt="Github-logo" onclick="window.open('https://github.com/matildatrodin')">
+                <p class="soc-button-text" onclick="window.open('https://github.com/matildatrodin')">Gh</p>
             </div>
             <div class="soc-button">
-                <img class="li-icon" src="images/LI-Logo.png" alt="LinkedIn-logo" onclick="window.open('https://www.linkedin.com/in/matilda-trodin/')">
+                <p class="soc-button-text"  onclick="window.open('https://www.linkedin.com/in/matilda-trodin/')">Li</p>
             </div>
-            <p class="header-3" onClick="themePicker(pink)">
-                Pink
-            </p>
         </div>
+        <script src="app.js"></script>
     </body>
 </html>
