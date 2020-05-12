@@ -6,6 +6,7 @@ body {
 
 #container {
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .header-container {
@@ -54,6 +55,8 @@ body {
     font-family: 'Caveat', cursive;
     font-size: 24pt;
     font-weight: 300;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
 }
 
 .matilda-img {
@@ -104,44 +107,77 @@ body {
 }
 
 .body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .body-container {
+        flex-direction: column;
+    }
+}
+
+.text-box {
+    width: 40vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
+}
+
+@media screen and (max-width: 600px) {
+    .text-box {
+      width: 90vw;
+      margin: 0;
+    }
+}
+
+#body-container-blue {
+    background-color: #79ADDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body-container-pink {
     background-color: #FFC4FD;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.body-container div {
+.subheader-text-box {
     width: 50vw;
     margin: 0;
 }
 
 @media screen and (max-width: 600px) {
-    .body-container div {
+    .subheader-text-box {
       width: 90vw;
       margin: 0;
     }
 }
 
 .triangle-container {
-    height: 20vh;
+    height: 15vh;
     overflow: hidden;
 }
 
 .triangle-left{
     position: absolute;
     left: 0;
-    border-bottom: 20vh solid #FFC09F;
+    border-bottom: 15vh solid #FFC09F;
     border-right: 60vw solid transparent;
 }
 
 .triangle-right{
     position: absolute;
     right: 0;
-    border-bottom: 20vh solid #FFC4FD;
+    border-bottom: 15vh solid #FFC4FD;
     border-left: 100vw solid transparent;
 }
 
 .triangle-top-left{
-    border-top: 20vh solid #FFC4FD;
+    border-top: 15vh solid #FFC4FD;
     border-right: 100vw solid transparent;
 }
