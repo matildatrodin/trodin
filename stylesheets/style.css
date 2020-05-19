@@ -10,26 +10,34 @@ p {
 
 #container {
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .theme-button-container {
     position: absolute;
-    right: 10px;
-    height: 90px;
+    right: 30px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.theme-button {
-    display: flex;
-    flex-direction: row;
-    opacity: 0.5;
+@media screen and (max-width: 600px) {
+    .theme-button-container {
+        position: static;
+        flex-direction: row;
+        width: 100px;
+        margin-top: 1vh;
+    }
 }
 
-.theme-button:hover {
-    opacity: 1;
+.theme-button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid white;
+    border-radius: 100px;
 }
 
 .halfCirclePink{
@@ -121,16 +129,39 @@ p {
     margin-top: 3vh;
 }
 
-.soc-button-text {
+.header-5 {
     font-family: 'Caveat', cursive;
-    font-size: 32pt;
+    font-size: 24pt;
     font-weight: 400;
     margin: 0;
+}
+
+.contact-button {
+    font-family: 'Caveat', cursive;
+    font-size: 24pt;
+    font-weight: 600;
+    margin-bottom: 3vh;
 }
 
 .matilda-img {
     width: 50vw;
     max-width: 300px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 }
 
 .divider {
@@ -139,6 +170,7 @@ p {
     align-items: center;
     height: 100px;
     border-radius: 3px;
+    margin-bottom: 10vh;
 }
 
 .gh-icon {
@@ -150,20 +182,25 @@ p {
     color: white;
 }
 
-.soc-button {
+.soc-button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
-    height: 60px;
-    width: 60px;
+    background-color: transparent;
+    color: black;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
-    margin: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border: 3px solid black;
 }
 
-.soc-button:hover {
-    opacity: 0.5;
+.soc-button-text {
+    font-family: 'Caveat', cursive;
+    font-size: 24pt;
+    font-weight: 600;
+    margin: 0;
 }
 
 .body-container {
@@ -197,6 +234,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .body-top-container-pink {
@@ -204,6 +242,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .subheader-text-box {

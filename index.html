@@ -11,21 +11,11 @@
     </head>
     <body>
         <div id="container">
-            <div class="theme-button-container">
-                <div class="theme-button" onClick="themePicker('pink')">
-                    <div class="halfCirclePink"></div>
-                    <div class="halfCircleOrange"></div>
-                </div>
-                <div class="theme-button" onClick="themePicker('blue')">
-                    <div class="halfCircleBlue"></div>
-                    <div class="halfCircleGreen"></div>
-                </div>
-            </div>
             <div class="header-container">
                 <div class="header-subcontainer">
                     <p class="header">Hi, </p>
                     <p class="header">I'm Matilda</p>
-                    <p id="header-2" class="header-2-pink">FRONTEND DEVELOPER & DESIGNER</p>
+                    <p id="header-2" class="header-2-pink">&lt;FRONTEND DEVELOPER & DESIGNER /&gt;</p>
                 </div>
                 <div class="header-subcontainer">
                     <img class="matilda-img" src="images/matilda-svart.png" alt="Matilda">
@@ -38,7 +28,7 @@
             <div id="body-top-container" class="body-top-container-pink">
                 <div class="subheader-text-box">
                     <p class="header-4">
-                        I’m a frontend developer currently based in Stockholm, Sweden. 
+                        A frontend developer currently based in Stockholm, Sweden. 
                     </p>
                     <p class="header-4">
                         I started as a graphic designer in my early twenties and with my education 
@@ -48,6 +38,16 @@
                     <p class="header-4">
                         My skills range from design, to HTML, CSS, Javascript and React, all the way to Node, jQuery and MongoDB.
                     </p>
+                </div>
+                <div class="theme-button-container">
+                    <div class="theme-button" onClick="themePicker('pink')">
+                        <div class="halfCirclePink"></div>
+                        <div class="halfCircleOrange"></div>
+                    </div>
+                    <div class="theme-button" onClick="themePicker('blue')">
+                        <div class="halfCircleBlue"></div>
+                        <div class="halfCircleGreen"></div>
+                    </div>
                 </div>
             </div>
             <div class="triangle-container">
@@ -76,12 +76,23 @@
                 </div>
             </div>
         </div>
+        <div class="contact-container">
+            <p class="contact-button" onclick="window.open('mailto:matildatrodin@gmail.com')">
+                &lt;CONTACT ME /&gt;
+            </p>
+            <p class="header-5">
+                or get to know me better first
+            </p>
+        </div>
         <div class="divider">
-            <div class="soc-button">
+            <div id="gh-button" class="soc-button">
                 <p class="soc-button-text" onclick="window.open('https://github.com/matildatrodin')">Gh</p>
             </div>
-            <div class="soc-button">
-                <p class="soc-button-text"  onclick="window.open('https://www.linkedin.com/in/matilda-trodin/')">Li</p>
+            <div id="li-button" class="soc-button">
+                <p class="soc-button-text" onclick="window.open('https://www.linkedin.com/in/matilda-trodin/')">Li</p>
+            </div>
+            <div id="cv-button" class="soc-button">
+                <p class="soc-button-text" onclick="window.open('/CV.pdf')">Cv</p>
             </div>
         </div>
         <script src="app.js"></script>
